@@ -1,0 +1,2 @@
+# usage: curl -sSL https://aka.ms/where/aro | bash
+az provider show -n Microsoft.RedHatOpenShift --query "resourceTypes[?resourceType == 'OpenShiftClusters']".locations --output json
