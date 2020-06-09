@@ -1,0 +1,4 @@
+echo usage: curl -sSL aka.ms/where/aks | bash
+echo displaying deployable locations for Azure Kubernetes Service (Microsoft.ContainerInstance)
+echo for roamap information, see https://aka.ms/aks/roadmap
+az provider show -n Microsoft.ContainerInstance --query "resourceTypes[?resourceType == 'containerGroups']".locations --output json
