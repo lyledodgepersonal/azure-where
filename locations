@@ -1,2 +1,3 @@
 echo listing all azure location strings
+echo usage: curl -sSL aka.ms/where/locations | bash
 az account list-locations --query "[].name" -o json
